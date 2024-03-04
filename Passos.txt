@@ -1,0 +1,18 @@
+Passo 1 - Instalar Node JS e Expo
+	npm install --global expo-cli
+Passo 2 - (cria o pojeto na pasta desejada pelo terminal)
+	npx create-expo-app my-app
+Passo3 - acessar a pasta do app
+	cd my-app
+Passo4 - rodar o app(Startar o servidor do app)
+	npx expo start
+Passo5 - Escolher como rodar (Android; IOS; Web; etc)
+	Se a escolha for pelo QrCode, deve baixar o app expoGo no aparelho, dar permissão e apontar o qr (Dispositivo deve estar na mesma rede)
+Passo5a - web instalar react native web
+	 npx expo install react-native-web react-dom @expo/metro-runtime
+Passo6a - ReactNavigation
+	npm install @react-navigation/native
+Passo7 - dependencias
+	npx expo install react-native-screens react-native-safe-area-context
+Passo8 - Navigator Stack
+	npm install @react-navigation/native-stack

@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native'
 export const styles = StyleSheet.create({
     box: {
         borderColor: '#121A2C',
-        borderWidth: 1,
+        borderWidth: 2,
         borderRadius: 4,
         padding: 8,
     },

@@ -6,22 +6,20 @@ export default function CardProduto({ produto }) {
     <View style={styles.pedidos}>
 
         <View style={styles.cardProduto}>
-            <Image style={styles.thumb} source={{ uri: produto.imagePath }} />
+            
 
             <View style={styles.produtoData}>
-                <Text>{produto.nome}</Text>
-                <Text style={styles.price}>R$ {produto.preco.toFixed(2)}</Text>
+                <Text style={styles.title}>{produto.nome}</Text>
+                <Text>
+                    <Image style={styles.fire} 
+                    source={{ uri:  '../../assets/fire.png'}} />   
+                    {produto.calorias} Calorias
+                </Text>
+                <Text style={styles.price}>$ {produto.preco.toFixed(2)}</Text>
             </View>
 
-            <View style={styles.spinner}>
-                <TouchableOpacity >
-                    <Text style={styles.spinnerMinus}>-</Text>
-                </TouchableOpacity>
-                <Text style={styles.spinnerValue}>0</Text>
-                <TouchableOpacity >
-                    <Text style={styles.spinnerPlus}>+</Text>
-                </TouchableOpacity>
-            </View>
+
+            <Image style={styles.thumb} source={{ uri: produto.imagePath }} />
 
         </View>
 

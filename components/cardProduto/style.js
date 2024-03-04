@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native'
 export const styles = StyleSheet.create({
     cardProduto: {
         borderColor: '#121A2C55',
-        borderWidth: 1,
+        borderWidth: 2,
         borderRadius: 4,
         padding: 8,
         flexDirection: 'row',
@@ -17,13 +17,25 @@ export const styles = StyleSheet.create({
         alignSelf: 'flex-start',
     },
     thumb: {
-        width: 50,
-        height: 50,
+        width: 80,
+        height: 80,
         borderRadius: 4,
     },
-    price: {
-        color: '#29A035',
+
+    fire: {
+        width: 15,
+        height: 15,
+        borderRadius: 4,
+    },
+    title: {
+        color: '121A2C',
         fontSize: 18,
+        fontWeight: 'bold',
+    },
+    price: {
+        color: '#ffd700',
+        fontSize: 18,
+        fontWeight: 'bold',
     },
     spinner: {
         flexDirection: 'row',

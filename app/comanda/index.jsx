@@ -1,5 +1,5 @@
 import { MaterialIcons } from '@expo/vector-icons';
-import { Text, TextInput, TouchableOpacity, View } from "react-native";
+import { Text, TouchableOpacity, View } from "react-native";
 
 import { styles } from "./style.js"
 import Input from '../../components/Input';
@@ -11,7 +11,7 @@ export default function Comanda({navigation}) {
             <View style={styles.header}>
                 <View>
                     <Text>Olá,</Text>
-                    <Text style={styles.title}>João Carlos</Text>
+                    <Text style={styles.title}>Seja Bem vindo!!!!</Text>
                 </View>
                 <TouchableOpacity onPress={() => navigation.navigate("Login")}>
                     <MaterialIcons name="exit-to-app" size={24} color="black" />
@@ -19,7 +19,7 @@ export default function Comanda({navigation}) {
             </View>
 
             <View>
-                <Input placeholder="Comanda" />
+                <Input placeholder="Entre com a comanda..." />
                 <Button onPress={() => navigation.navigate('Produtos')} >confirmar</Button>
             </View>
 

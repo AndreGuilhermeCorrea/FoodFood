@@ -1,4 +1,4 @@
-import { Image, Text, View, TouchableOpacity } from 'react-native';
+import { Image, Text, View} from 'react-native';
 import { styles } from "./style";
 
 export default function CardProduto({ produto }) {

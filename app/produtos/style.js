@@ -35,4 +35,8 @@ export const styles = StyleSheet.create({
         justifyContent: 'space-between',
         margin: 20,
     },
+    title: {
+        fontSize: 24,
+        fontWeight: 700,
+    },
 })

@@ -1,36 +1,18 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, TextInput, View } from 'react-native';
+import Comanda from './app/Comanda'
+import Login from './app/Login'
+import Produtos from './app/Produtos'
+import { NavigationContainer } from '@react-navigation/native'
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
+const Stack = createNativeStackNavigator()
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Sistema</Text>
-      <Text style={styles.title}>Comanda</Text>
-      <TextInput style={styles.input} placeholder="email" />
-      <TextInput style={styles.input} placeholder='senha' secureTextEntry /> 
-      <StatusBar style="auto" />
-    </View>
-  );
+    return (
+        <NavigationContainer>
+            <Stack.Navigator screenOptions={{ headerShown: false }}>
+                <Stack.Screen name="Login" component={Login} />
+                <Stack.Screen name="Produtos" component={Produtos} />
+                <Stack.Screen name="Comanda" component={Comanda} />
+            </Stack.Navigator>
+        </NavigationContainer>
+    )
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#FCFBFF',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  title: {
-    color: '121A2C',
-    fontSize: 24,
-    fontWeight: 'bold'
-  },
-  input:{
-    padding:8,
-    borderColor: 'gray',
-    borderWidth: 1,
-    marginTop: 20,
-    borderRadius: 4
-  }
-
-});
